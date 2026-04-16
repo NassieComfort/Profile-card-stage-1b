@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <article data-testid="test-profile-card" class="profile-card">
+            <header class="profile-header">
+                <figure class="avatar-container">
+                    <img 
+                        data-testid="test-user-avatar" 
+                        src="photo.jpeg"
+                        alt="Profile photo for the user"
+                        class="avatar"
+                    />
+                </figure>
+                <div class="header-content">
+                    <h1 data-testid="test-user-name" class="user-name">Nassie Comfort</h1>
+                    <p 
+                        data-testid="test-user-time" 
+                        class="user-time"
+                        aria-live="polite"
+                        aria-label="Current time in milliseconds"
+                    >
+                        Time: 0
+                    </p>
+                </div>
+            </header>
+
+            <section class="bio-section">
+                <p data-testid="test-user-bio" class="user-bio">
+                    Passionate frontend developer with a love for building accessible, responsive user interfaces. 
+                    Coffee enthusiast and open-source contributor.
+                </p>
+            </section>
+
+            <nav class="social-section">
+                <h2 class="sr-only">Social Links</h2>
+                <ul data-testid="test-user-social-links" class="social-links">
+                    <li>
+                        <a 
+                            data-testid="test-user-social-twitter" 
+                            href="https://x.com/xnassiec?s=21" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="social-link"
+                        >
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            data-testid="test-user-social-instagram" 
+                            href="https://www.instagram.com/nassie.xo?igsh=MTl6YjN0ZTVndTM0ZQ%3D%3D&utm_source=qr" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="social-link"
+                        >
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            data-testid="test-user-social-linkedin" 
+                            href="https://www.linkedin.com/in/nassie-bukunmi-4a1614385?utm_source=share_via&utm_content=profile&utm_medium=member_ios" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="social-link"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="hobbies-section">
+                <h2>Hobbies</h2>
+                <ul data-testid="test-user-hobbies" class="hobbies-list">
+                    <li>Reading tech blogs</li>
+                    <li>Watching tutorials</li>
+                    <li>Listening to music</li>
+                    <li>Designing UI</li>
+                </ul>
+            </section>
+
+            <section class="dislikes-section">
+                <h2>Dislikes</h2>
+                <ul data-testid="test-user-dislikes" class="dislikes-list">
+                    <li>Slow internet</li>
+                    <li>Messy code</li>
+                    <li>Inaccessible websites</li>
+                    <li>Bad user experience</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
